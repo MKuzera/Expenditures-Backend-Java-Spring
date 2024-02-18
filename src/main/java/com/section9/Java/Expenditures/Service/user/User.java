@@ -1,9 +1,13 @@
 package com.section9.Java.Expenditures.Service.user;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.section9.Java.Expenditures.Service.Expenditures.Expenditure;
+import jakarta.persistence.*;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity(name = "user_list")
+@Table(name = "user_list")
 public class User {
     @Id
     @GeneratedValue
@@ -11,12 +15,13 @@ public class User {
     private String name;
     private String surname;
     private String login;
+    @JsonIgnore
     private String email;
+    @JsonIgnore
+    private String password;
 
     public User() {
     }
-
-    private String password;
 
     public User(Integer id, String name, String surname, String login, String email, String password) {
         this.id = id;
@@ -74,4 +79,6 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
+
 }
