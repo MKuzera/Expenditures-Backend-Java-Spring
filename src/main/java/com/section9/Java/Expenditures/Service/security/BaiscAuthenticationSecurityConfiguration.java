@@ -8,7 +8,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 
-@Configuration
+//@Configuration
 public class BaiscAuthenticationSecurityConfiguration {
     @Bean
     @SuppressWarnings("removal") // <- never do that, used for simplicity. (Security section is the next section in course)

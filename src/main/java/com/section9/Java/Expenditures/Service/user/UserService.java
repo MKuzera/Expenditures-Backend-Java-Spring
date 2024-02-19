@@ -56,4 +56,8 @@ public class UserService {
         return null;
     }
 
+    public User getUserByLogin(String login){
+        return userRepository.findUserByLogin(login);
+    }
+
 }

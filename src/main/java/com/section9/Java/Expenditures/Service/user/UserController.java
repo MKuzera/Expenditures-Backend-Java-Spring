@@ -1,5 +1,6 @@
 package com.section9.Java.Expenditures.Service.user;
 
+import com.section9.Java.Expenditures.Service.Expenditures.Expenditure;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
@@ -33,7 +34,10 @@ public class UserController {
     public User login(@RequestBody LoginRequest loginRequest) {
         return userService.LoginUser(loginRequest.getLogin(), loginRequest.getPassword());
     }
-
+    @GetMapping(value="/usergetid/{userlogin}")
+    public Integer getUserID(@PathVariable String userlogin){
+        return userService.getUserByLogin(userlogin).getId();
+    }
 
 
 }

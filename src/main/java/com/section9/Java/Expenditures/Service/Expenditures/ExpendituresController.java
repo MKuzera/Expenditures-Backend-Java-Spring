@@ -25,9 +25,11 @@ public class ExpendituresController {
     }
     @GetMapping(value="/user/{userID}/expenditure/{expID}")
     public Expenditure getExpenditure(@PathVariable Integer userID, @PathVariable Integer expID){
-        System.out.println(expID);
         return expendituresService.getByExpenditureID(expID);
     }
+
+
+
 
     @DeleteMapping(value="/user/{userID}/expenditure/{expID}")
     public ResponseEntity<Void> deleteExpenditure(@PathVariable Integer userID, @PathVariable Integer expID){
