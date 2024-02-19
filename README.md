@@ -2,6 +2,9 @@
 <h3>This is a backend part of my own implemntation of section 12 of Spring course </h3>
 
 The main goal of this section was to implement a Todo manager but I preffered the Expenditures manager.
+<h3>Link to the frontend side of project </h3>
+https://github.com/MKuzera/Expenditures-Frontend-TS-React
+
 
 <h3>In this section:</h3>
 
