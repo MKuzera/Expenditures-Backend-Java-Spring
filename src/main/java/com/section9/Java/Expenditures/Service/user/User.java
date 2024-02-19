@@ -1,13 +1,10 @@
 package com.section9.Java.Expenditures.Service.user;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.section9.Java.Expenditures.Service.Expenditures.Expenditure;
 import jakarta.persistence.*;
 
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity(name = "user_list")
-@Table(name = "user_list")
+@Table
 public class User {
     @Id
     @GeneratedValue

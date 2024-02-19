@@ -1,14 +1,6 @@
 package com.section9.Java.Expenditures.Service.user;
 
-import com.section9.Java.Expenditures.Service.Expenditures.Expenditure;
-import org.apache.catalina.connector.Response;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 @RestController
@@ -36,11 +28,10 @@ public class UserController {
 
     }
 
-
+    @Deprecated // switched to BasicAuth
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public User login(@RequestBody LoginRequest loginRequest) {
-        User user = userService.LoginUser(loginRequest.getLogin(), loginRequest.getPassword());
-        return user;
+        return userService.LoginUser(loginRequest.getLogin(), loginRequest.getPassword());
     }
 
 
