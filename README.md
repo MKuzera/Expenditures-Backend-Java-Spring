@@ -32,3 +32,10 @@ To do:
 -add registration for new users
 -add validations
 
+![image](https://github.com/MKuzera/Expenditures-Backend-Java-Spring/assets/116084403/2737e1de-9063-4206-a290-6d872c4e69b7)
+
+![image](https://github.com/MKuzera/Expenditures-Backend-Java-Spring/assets/116084403/49227489-f17b-49f6-93e3-3f304db20122)
+
+![image](https://github.com/MKuzera/Expenditures-Backend-Java-Spring/assets/116084403/fb7e8c31-24a8-4c4c-9eb7-d78927642041)
+
+![image](https://github.com/MKuzera/Expenditures-Backend-Java-Spring/assets/116084403/4dd907fd-4757-400e-9d24-1dd85b2ec4a4)
