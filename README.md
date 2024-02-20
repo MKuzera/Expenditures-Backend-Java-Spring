@@ -26,11 +26,6 @@ https://github.com/MKuzera/Expenditures-Frontend-TS-React
 
 <h5>Maven project</h5>
 
-To do: 
--add custom responses for errors
--expand project by adding logging for diffrent users
--add registration for new users
--add validations
 
 ![image](https://github.com/MKuzera/Expenditures-Backend-Java-Spring/assets/116084403/2737e1de-9063-4206-a290-6d872c4e69b7)
 
