@@ -1,4 +1,4 @@
-<h1>Your expenditures manager - backend</h1>
+<h1>Your expenditures manager - REST API</h1>
 <h3>This is a backend part of my own implemntation of section 12 of Spring course </h3>
 
 The main goal of this section was to implement a Todo manager but I preffered the Expenditures manager.
