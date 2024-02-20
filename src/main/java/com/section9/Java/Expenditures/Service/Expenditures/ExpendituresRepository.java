@@ -8,4 +8,6 @@ import java.util.Optional;
 public interface ExpendituresRepository extends JpaRepository<Expenditure,Integer> {
     List<Expenditure> findExpendituresByUserId(Integer userID);
     public Optional<Expenditure> findById(Integer id);
+
+
 }

@@ -4,6 +4,7 @@ package com.section9.Java.Expenditures.Service.Expenditures;
 import com.section9.Java.Expenditures.Service.user.UserRepository;
 import org.springframework.cglib.core.Local;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
@@ -23,11 +24,11 @@ public class ExpendituresController {
     public List<Expenditure> getExpenditures(@PathVariable Integer userID){
         return expendituresService.getAllExpendituresByUserId(userID);
     }
+
     @GetMapping(value="/user/{userID}/expenditure/{expID}")
     public Expenditure getExpenditure(@PathVariable Integer userID, @PathVariable Integer expID){
         return expendituresService.getByExpenditureID(expID);
     }
-
 
 
 
